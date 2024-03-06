@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collab App</title>
+    <script type="module" src="main.js" defer=""></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div style="display: flex; flex-wrap: wrap;">
+      <div id="top-bar" class="top-bar">
+        <div id="title" class="title">Twitch Streamer Collab Search</div>
+      </div>
+      <div id="top-bar" class="top-bar">
+        <div id="user-id" style="display: inline-block" class="title"></div>
+      </div>
+      <div id="top-bar" class="top-bar">
+        <input type="text" id="user-id-field" />
+        <input type="button" value="Change ID" style="font-weight: bold; display: inline-block" id="id-button"/>
+      </div>
+      <div id="top-bar" class="top-bar">
+        <input type="button" value="Get Saved Videos" style="font-weight: bold; display: inline-block" id="get-videos-button"/>
+      </div>
+    </div>
+    <div id="master-container" class="master-container">
+      <div display="inline-block" id="search-container">
+        <div id="controls">
+          <label for="Streamer Name:">Streamer Name: </label>
+          <input type="text" list="search-history" id="streamer-name" />
+          <datalist id="search-history"></datalist>
+          <input
+            type="button"
+            value="Search"
+            style="font-weight: bold"
+            id="search-button"
+          />
+          <input
+            type="button"
+            value="Clear"
+            style="font-weight: bold"
+            id="clear-button"
+          />
+        </div>
+        <div id="video-header"; style="display: none" ></div>
+      </div>
+      <div id="video-container"></div>
+    </div>
+  </body>
+</html>

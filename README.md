@@ -1,4 +1,7 @@
 # Twitch Collaboration Searcher
+
+https://csc-326-final.onrender.com/
+
 ## Outline:
 This application allows for users of Twitch to search for Collaborative videos between Twitch creators. I made this application because twitch has historically offered near zero support for interactions between streamers, including between fellow Twitch streamers or streamers from other platforms such as YouTube. My application takes advantage of the standard streamers use of putting a link to their collaborators in their stream titles. This means that the Twitch API can be used to fetch video titles which would normally be clunky to view. By searching for names in said titles, a list of videos and collaborators can be displayed to the user.
 
